@@ -13,7 +13,17 @@
 
 ### GitHub 数据快照约定
 
-首次发布时使用标签 `datasets-v1`，每个原始 ZIP 作为一个独立附件，沿用上表文件名。发布说明列明原作者、官方来源、许可及是否修改，并保留随附的许可文本。数据包如有更新，使用新标签，以便旧实验继续引用原版本。当前下载可使用上表官方来源；数据快照集中在[仓库 Releases](https://github.com/Sparkling-Flames/graduate-paper/releases)。
+四个原始 ZIP 已发布到 [datasets-v1](https://github.com/Sparkling-Flames/graduate-paper/releases/tag/datasets-v1)。压缩包作为 Release 附件独立存放。按需下载：
+
+[UCI-HAR.zip](https://github.com/Sparkling-Flames/graduate-paper/releases/download/datasets-v1/UCI-HAR.zip) · [MotionSense_A_DeviceMotion.zip](https://github.com/Sparkling-Flames/graduate-paper/releases/download/datasets-v1/MotionSense_A_DeviceMotion.zip) · [PAMAP2_Dataset.zip](https://github.com/Sparkling-Flames/graduate-paper/releases/download/datasets-v1/PAMAP2_Dataset.zip) · [OPPORTUNITY.zip](https://github.com/Sparkling-Flames/graduate-paper/releases/download/datasets-v1/OPPORTUNITY.zip)
+
+在云端安装 GitHub CLI 后，从仓库根目录执行下列命令即可将四个附件保存到本地数据目录。对于私有仓库，先使用具备读取权限的账户登录，或配置相应的环境变量 `GH_TOKEN`。
+
+```sh
+gh release download datasets-v1 --repo Sparkling-Flames/graduate-paper --pattern "*.zip" --dir data
+```
+
+只需要一套数据时，将 `*.zip` 替换为上表对应的文件名。UCI HAR 的解压步骤见下节，其他三个 ZIP 可由对应实验脚本直接读取。后续如替换数据包，使用新标签以保留旧实验引用的版本。
 
 ## UCI HAR 解压说明
 
