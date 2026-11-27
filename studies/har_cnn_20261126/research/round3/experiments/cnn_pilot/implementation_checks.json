@@ -1,0 +1,8 @@
+{
+  "uniform_ls_matches_manual": true,
+  "kl_batchmean_matches_manual": true,
+  "teacher_receives_no_gradient": true,
+  "student_receives_finite_gradient": true,
+  "identical_distribution_kl_zero": true,
+  "checked_utc": "2026-11-21T17:51:54.663098+00:00"
+}

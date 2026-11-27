@@ -1,0 +1,92 @@
+{
+  "protocol_version": "cnn_fixed_teacher_budget_capacity_v1",
+  "input": "official train inertial signals, N x 9 x 128, unchanged audited channel scaler",
+  "train_subjects": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    11,
+    14,
+    15,
+    16,
+    17,
+    19,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27
+  ],
+  "val_subjects": [
+    3,
+    28,
+    29,
+    30
+  ],
+  "student_widths": [
+    4,
+    8,
+    16
+  ],
+  "main_methods": [
+    "ce",
+    "ls",
+    "kd_ce"
+  ],
+  "diagnostic_width": 8,
+  "diagnostic_method": "kd_ls",
+  "paired_seeds": [
+    20261121,
+    20261122,
+    20261123
+  ],
+  "student_epochs": 160,
+  "budgets": [
+    80,
+    160
+  ],
+  "teacher_epochs": 80,
+  "teacher_seed": 20261120,
+  "teacher_channels": [
+    32,
+    64
+  ],
+  "ce_teacher_source": "frozen round3 best80, epoch17, no retraining",
+  "ls_teacher_source": "new 80epoch LS teacher; freeze best80",
+  "architecture": "Conv9-w(k5,p2)-ReLU-MaxPool2-Convw-2w(k5,p2)-ReLU-GAP-Linear6",
+  "batch_size": 128,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "dropout": 0.0,
+  "batch_norm": false,
+  "augmentation": false,
+  "kd_temperature": 2.0,
+  "kd_lambda_teacher_weight": 0.5,
+  "kl_reduction": "batchmean",
+  "kd_temperature_squared": true,
+  "label_smoothing_uniform_epsilon": 0.1,
+  "threads": 2,
+  "interop_threads": 1,
+  "checkpoint_selection": "max val macro-F1, then min hard-label NLL, then earliest epoch",
+  "early_stopping": false,
+  "device": "cpu",
+  "dtype": "float32",
+  "official_test_opened": false,
+  "benchmark": false,
+  "run": "student_w16_ce_seed20261123",
+  "role": "student",
+  "width": 16,
+  "seed": 20261123,
+  "method": "ce",
+  "epochs_this_run": 160,
+  "initial_state_sha256": "294105e8bfd9cd36660c9727255f609908735b2981c2335d4aeaf9ee6523756d",
+  "minibatch_orders_file_sha256": "99df1a54a0386e6cf8c108d8973321591f1699dc0abd8e8529abcf4f9a726a1f",
+  "used_orders_content_sha256": "507cc6700a4957e22409d997c19fade9bd0f07aceb3563bc855c433e5bf5f6b5",
+  "teacher_identity": null,
+  "script_sha256": "9211aa9e960d929e621e15bb9fc5030c3893b8b194ebb1a733a6f7fbc415effa",
+  "started_utc": "2026-11-25T18:08:04.938305+00:00"
+}

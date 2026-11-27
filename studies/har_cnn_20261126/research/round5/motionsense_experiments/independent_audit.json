@@ -1,0 +1,13 @@
+{
+  "checkpoints_checked": 38,
+  "independent_metric_max_errors": {
+    "macro_f1": 0.0,
+    "accuracy": 0.0,
+    "nll": 3.4543668681052964e-07
+  },
+  "paired_initialization_orders": true,
+  "confusions_and_per_subject_metrics_verified": true,
+  "max_f1_checkpoint_rule_verified": true,
+  "sealed_test_entries_not_read": 60,
+  "passed": true
+}

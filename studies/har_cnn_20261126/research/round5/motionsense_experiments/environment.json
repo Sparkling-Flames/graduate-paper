@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "torch": "2.7.1+cpu",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "threads": 2,
+  "deterministic_algorithms": true,
+  "script_sha256": "6206632fff7484c6b5015fbfbfe90a8a23a61c274f2c435f41fd06c2027f5de9",
+  "protocol_sha256": "2c42d8c9f1758d72cf0f9b27d61dc0644ffbf4ea4f6ed614c8cc61936d49ce26",
+  "started_utc": "2026-11-25T17:49:42.763380+00:00"
+}

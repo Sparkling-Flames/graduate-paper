@@ -1,0 +1,7 @@
+{
+  "teacher_state_sha256": "53b50f6e3a7b021e109eee87e387feefa440a7d3323538c22b1920afd703babc",
+  "row_order": "same as data/train_val.npz index_train",
+  "rows": 5902,
+  "requires_grad": false,
+  "official_test_evaluated": false
+}

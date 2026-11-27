@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-11-25T18:13:11.397119+00:00",
+  "new_students": 30,
+  "new_teachers": 1,
+  "frozen_old_ce_teachers": 1,
+  "all_students_160_epochs": true,
+  "fixed_teacher_across_80_and_160_budgets": true,
+  "paired_initialization_and_order_verified": true,
+  "old_width8_seed20261121_first80_reproduction_passed": true,
+  "official_test_evaluated": false,
+  "scope": "development evidence on one four-person validation split; no deployment benchmark"
+}

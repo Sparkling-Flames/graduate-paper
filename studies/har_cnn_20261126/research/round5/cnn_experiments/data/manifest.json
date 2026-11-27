@@ -1,0 +1,83 @@
+{
+  "prepared_utc": "2026-11-25T17:50:00.548683+00:00",
+  "source_cache": "/workspace/scratch/9ff27115b9fb/research/round3/experiments/cnn_pilot/data/train_val.npz",
+  "source_cache_sha256": "b998c8927e355bff70385462b9068ef49b3e6d1e6b78bc0afbd4dcf03e3d80ab",
+  "cached_sha256": "b998c8927e355bff70385462b9068ef49b3e6d1e6b78bc0afbd4dcf03e3d80ab",
+  "source_manifest_sha256": "766406467f1cb33f450723493a34332c91808f03641821583e29957a3e6945ee",
+  "shape_train": [
+    5902,
+    9,
+    128
+  ],
+  "shape_val": [
+    1450,
+    9,
+    128
+  ],
+  "train_subjects": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    11,
+    14,
+    15,
+    16,
+    17,
+    19,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27
+  ],
+  "val_subjects": [
+    3,
+    28,
+    29,
+    30
+  ],
+  "channel_order": [
+    "body_acc_x",
+    "body_acc_y",
+    "body_acc_z",
+    "body_gyro_x",
+    "body_gyro_y",
+    "body_gyro_z",
+    "total_acc_x",
+    "total_acc_y",
+    "total_acc_z"
+  ],
+  "scaler_sha256": "2ed140f00ed10fb4a66bf70175e538f0320bd56194b14d1ed6011e2f63092afe",
+  "train_channel_max_abs_mean": 6.855727326626304e-11,
+  "train_channel_max_abs_std_minus_one": 2.1703372432568813e-10,
+  "row_alignment_with_official_train_feature_cache": true,
+  "index_train_sha256": "299a44b3ce030ee8d994c3b656ae99d6d8b9e9feea473a9680a401d261ade8ea",
+  "epoch_orders": {
+    "20261120": {
+      "file_sha256": "3d858c7fef2871f6e53be1f590d28a329813189412f27b661da07daee0fd152a",
+      "first80_content_sha256": "8ab0349edfbffc454f11d914c4ea9263db1b8a3fe8cd21af9ab78877401f5b71",
+      "old80_content_sha256": "8ab0349edfbffc454f11d914c4ea9263db1b8a3fe8cd21af9ab78877401f5b71"
+    },
+    "20261121": {
+      "file_sha256": "16ba7a313b869e3a246234166abcde3696f3d2bea40047e6a3ab6cdb5706c4ee",
+      "first80_content_sha256": "b1b51369f33af117acf7ff5c72dc23e81e0ff2f03dfacb05cd91f5be4540484b",
+      "old80_content_sha256": "b1b51369f33af117acf7ff5c72dc23e81e0ff2f03dfacb05cd91f5be4540484b"
+    },
+    "20261122": {
+      "file_sha256": "5c737ce3e92082db92402223bd94dd9e2ac7b130cc57603d48ceb4157972a111",
+      "first80_content_sha256": "1175236b67dbf7bd283d29d993260b8737cf8f26d2bd8ef48f24724d704811af",
+      "old80_content_sha256": "1175236b67dbf7bd283d29d993260b8737cf8f26d2bd8ef48f24724d704811af"
+    },
+    "20261123": {
+      "file_sha256": "99df1a54a0386e6cf8c108d8973321591f1699dc0abd8e8529abcf4f9a726a1f",
+      "first80_content_sha256": "ce6dcf4d2a87d30369d70432e89a16970f6e14389a247253990c6ee1d4ca7d2b",
+      "old80_content_sha256": "ce6dcf4d2a87d30369d70432e89a16970f6e14389a247253990c6ee1d4ca7d2b"
+    }
+  },
+  "opened_raw_dataset_entries_this_round": [],
+  "official_test_feature_label_entries_opened": [],
+  "official_test_evaluated": false
+}

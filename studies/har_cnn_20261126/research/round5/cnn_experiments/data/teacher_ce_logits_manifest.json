@@ -1,0 +1,23 @@
+{
+  "objective": "ce",
+  "run": "teacher_ce_frozen_round3",
+  "selected_budget": 80,
+  "selected_epoch": 17,
+  "state_sha256": "53b50f6e3a7b021e109eee87e387feefa440a7d3323538c22b1920afd703babc",
+  "cached_logits_file_sha256": "a923cfb7f49c27a02f7edb8bd992be598df921e3961ac3babd9d7fe7db61322d",
+  "index_train_sha256": "299a44b3ce030ee8d994c3b656ae99d6d8b9e9feea473a9680a401d261ade8ea",
+  "row_count": 5902,
+  "requires_grad": false,
+  "training_target_statistics": {
+    "1.0": {
+      "mean_entropy_nats": 0.09723322253823896,
+      "mean_max_probability": 0.9619497987229528
+    },
+    "2.0": {
+      "mean_entropy_nats": 0.2824233961001016,
+      "mean_max_probability": 0.9043100480283672
+    }
+  },
+  "teacher_used_for_all_student_epochs": "same fixed best80 snapshot",
+  "official_test_evaluated": false
+}

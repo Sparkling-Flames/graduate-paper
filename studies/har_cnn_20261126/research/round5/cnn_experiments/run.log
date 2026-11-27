@@ -1,0 +1,66 @@
+{"event": "cost_probe", "run": "teacher_ls_seed20261120", "epochs": 80, "estimated_training_seconds": 118.26}
+{"event": "completed", "run": "teacher_ls_seed20261120", "best80_f1": 0.9409605488550122, "best160_f1": null, "training_seconds": 67.6}
+{"event": "cost_probe", "run": "student_w8_ce_seed20261121", "epochs": 160, "estimated_training_seconds": 40.75}
+{"event": "old80_reproduction", "run": "student_w8_ce_seed20261121", "passed": true, "max_abs_metric_difference": 2.220446049250313e-16}
+{"event": "completed", "run": "student_w8_ce_seed20261121", "best80_f1": 0.9309451528794167, "best160_f1": 0.9309451528794167, "training_seconds": 35.82}
+{"event": "cost_probe", "run": "student_w8_ls_seed20261121", "epochs": 160, "estimated_training_seconds": 33.92}
+{"event": "old80_reproduction", "run": "student_w8_ls_seed20261121", "passed": true, "max_abs_metric_difference": 1.1102230246251565e-16}
+{"event": "completed", "run": "student_w8_ls_seed20261121", "best80_f1": 0.9307095309344465, "best160_f1": 0.9382069713306002, "training_seconds": 41.43}
+{"event": "cost_probe", "run": "student_w8_kd_ce_seed20261121", "epochs": 160, "estimated_training_seconds": 34.34}
+{"event": "old80_reproduction", "run": "student_w8_kd_ce_seed20261121", "passed": true, "max_abs_metric_difference": 2.220446049250313e-16}
+{"event": "completed", "run": "student_w8_kd_ce_seed20261121", "best80_f1": 0.9371659824832904, "best160_f1": 0.9376915897943984, "training_seconds": 37.23}
+{"event": "cost_probe", "run": "student_w8_ce_seed20261122", "epochs": 160, "estimated_training_seconds": 35.2}
+{"event": "completed", "run": "student_w8_ce_seed20261122", "best80_f1": 0.9423768578382412, "best160_f1": 0.9423768578382412, "training_seconds": 36.19}
+{"event": "cost_probe", "run": "student_w8_ls_seed20261122", "epochs": 160, "estimated_training_seconds": 34.06}
+{"event": "completed", "run": "student_w8_ls_seed20261122", "best80_f1": 0.9257011716084721, "best160_f1": 0.9257011716084721, "training_seconds": 33.18}
+{"event": "cost_probe", "run": "student_w8_kd_ce_seed20261122", "epochs": 160, "estimated_training_seconds": 33.4}
+{"event": "completed", "run": "student_w8_kd_ce_seed20261122", "best80_f1": 0.9332097719602958, "best160_f1": 0.9332097719602958, "training_seconds": 34.65}
+{"event": "cost_probe", "run": "student_w8_ce_seed20261123", "epochs": 160, "estimated_training_seconds": 31.84}
+{"event": "completed", "run": "student_w8_ce_seed20261123", "best80_f1": 0.9247699644987332, "best160_f1": 0.9267889541208191, "training_seconds": 32.9}
+{"event": "cost_probe", "run": "student_w8_ls_seed20261123", "epochs": 160, "estimated_training_seconds": 34.22}
+{"event": "completed", "run": "student_w8_ls_seed20261123", "best80_f1": 0.934045239156692, "best160_f1": 0.934045239156692, "training_seconds": 34.22}
+{"event": "cost_probe", "run": "student_w8_kd_ce_seed20261123", "epochs": 160, "estimated_training_seconds": 33.17}
+{"event": "completed", "run": "student_w8_kd_ce_seed20261123", "best80_f1": 0.9163680577760084, "best160_f1": 0.9216140056141202, "training_seconds": 38.41}
+{"event": "cost_probe", "run": "student_w4_ce_seed20261121", "epochs": 160, "estimated_training_seconds": 29.42}
+{"event": "completed", "run": "student_w4_ce_seed20261121", "best80_f1": 0.9335371112510225, "best160_f1": 0.9335371112510225, "training_seconds": 27.88}
+{"event": "cost_probe", "run": "student_w4_ls_seed20261121", "epochs": 160, "estimated_training_seconds": 28.16}
+{"event": "completed", "run": "student_w4_ls_seed20261121", "best80_f1": 0.9156454715557244, "best160_f1": 0.938715968792699, "training_seconds": 29.45}
+{"event": "cost_probe", "run": "student_w4_kd_ce_seed20261121", "epochs": 160, "estimated_training_seconds": 29.22}
+{"event": "completed", "run": "student_w4_kd_ce_seed20261121", "best80_f1": 0.9373666911264773, "best160_f1": 0.9382695986552511, "training_seconds": 31.57}
+{"event": "cost_probe", "run": "student_w4_ce_seed20261122", "epochs": 160, "estimated_training_seconds": 29.33}
+{"event": "completed", "run": "student_w4_ce_seed20261122", "best80_f1": 0.9372394591518098, "best160_f1": 0.9411683277962347, "training_seconds": 36.5}
+{"event": "cost_probe", "run": "student_w4_ls_seed20261122", "epochs": 160, "estimated_training_seconds": 46.42}
+{"event": "completed", "run": "student_w4_ls_seed20261122", "best80_f1": 0.9361533802728274, "best160_f1": 0.9376787957511672, "training_seconds": 36.79}
+{"event": "cost_probe", "run": "student_w4_kd_ce_seed20261122", "epochs": 160, "estimated_training_seconds": 35.17}
+{"event": "completed", "run": "student_w4_kd_ce_seed20261122", "best80_f1": 0.9153492274619714, "best160_f1": 0.9153492274619714, "training_seconds": 36.0}
+{"event": "cost_probe", "run": "student_w4_ce_seed20261123", "epochs": 160, "estimated_training_seconds": 66.72}
+{"event": "completed", "run": "student_w4_ce_seed20261123", "best80_f1": 0.9252738963052277, "best160_f1": 0.9348962405654498, "training_seconds": 35.57}
+{"event": "cost_probe", "run": "student_w4_ls_seed20261123", "epochs": 160, "estimated_training_seconds": 36.38}
+{"event": "completed", "run": "student_w4_ls_seed20261123", "best80_f1": 0.9294974387660732, "best160_f1": 0.9332583910582187, "training_seconds": 42.05}
+{"event": "cost_probe", "run": "student_w4_kd_ce_seed20261123", "epochs": 160, "estimated_training_seconds": 33.32}
+{"event": "completed", "run": "student_w4_kd_ce_seed20261123", "best80_f1": 0.9281699945168237, "best160_f1": 0.9397392736016524, "training_seconds": 42.43}
+{"event": "cost_probe", "run": "student_w16_ce_seed20261121", "epochs": 160, "estimated_training_seconds": 62.37}
+{"event": "completed", "run": "student_w16_ce_seed20261121", "best80_f1": 0.913848018276698, "best160_f1": 0.913848018276698, "training_seconds": 61.65}
+{"event": "cost_probe", "run": "student_w16_ls_seed20261121", "epochs": 160, "estimated_training_seconds": 64.71}
+{"event": "completed", "run": "student_w16_ls_seed20261121", "best80_f1": 0.9375393010273109, "best160_f1": 0.9375393010273109, "training_seconds": 61.82}
+{"event": "cost_probe", "run": "student_w16_kd_ce_seed20261121", "epochs": 160, "estimated_training_seconds": 65.99}
+{"event": "completed", "run": "student_w16_kd_ce_seed20261121", "best80_f1": 0.9240453699638872, "best160_f1": 0.926194212376026, "training_seconds": 77.23}
+{"event": "cost_probe", "run": "student_w16_ce_seed20261122", "epochs": 160, "estimated_training_seconds": 52.16}
+{"event": "completed", "run": "student_w16_ce_seed20261122", "best80_f1": 0.9452043459428263, "best160_f1": 0.9452043459428263, "training_seconds": 56.02}
+{"event": "cost_probe", "run": "student_w16_ls_seed20261122", "epochs": 160, "estimated_training_seconds": 57.34}
+{"event": "completed", "run": "student_w16_ls_seed20261122", "best80_f1": 0.9408217439994581, "best160_f1": 0.9408217439994581, "training_seconds": 55.6}
+{"event": "cost_probe", "run": "student_w16_kd_ce_seed20261122", "epochs": 160, "estimated_training_seconds": 54.3}
+{"event": "completed", "run": "student_w16_kd_ce_seed20261122", "best80_f1": 0.9124611346425922, "best160_f1": 0.9124611346425922, "training_seconds": 54.81}
+{"event": "cost_probe", "run": "student_w16_ce_seed20261123", "epochs": 160, "estimated_training_seconds": 48.92}
+{"event": "completed", "run": "student_w16_ce_seed20261123", "best80_f1": 0.9428764911834934, "best160_f1": 0.9428764911834934, "training_seconds": 52.86}
+{"event": "cost_probe", "run": "student_w16_ls_seed20261123", "epochs": 160, "estimated_training_seconds": 50.38}
+{"event": "completed", "run": "student_w16_ls_seed20261123", "best80_f1": 0.9436927490397893, "best160_f1": 0.9436927490397893, "training_seconds": 67.8}
+{"event": "cost_probe", "run": "student_w16_kd_ce_seed20261123", "epochs": 160, "estimated_training_seconds": 58.22}
+{"event": "completed", "run": "student_w16_kd_ce_seed20261123", "best80_f1": 0.9139417606842306, "best160_f1": 0.9335264705937955, "training_seconds": 71.48}
+{"event": "cost_probe", "run": "student_w8_kd_ls_seed20261121", "epochs": 160, "estimated_training_seconds": 36.79}
+{"event": "completed", "run": "student_w8_kd_ls_seed20261121", "best80_f1": 0.9401633697484387, "best160_f1": 0.9421070348888101, "training_seconds": 37.09}
+{"event": "cost_probe", "run": "student_w8_kd_ls_seed20261122", "epochs": 160, "estimated_training_seconds": 34.7}
+{"event": "completed", "run": "student_w8_kd_ls_seed20261122", "best80_f1": 0.9423320965064201, "best160_f1": 0.9423320965064201, "training_seconds": 38.81}
+{"event": "cost_probe", "run": "student_w8_kd_ls_seed20261123", "epochs": 160, "estimated_training_seconds": 38.18}
+{"event": "completed", "run": "student_w8_kd_ls_seed20261123", "best80_f1": 0.9345424461786425, "best160_f1": 0.9378179213316148, "training_seconds": 36.8}
+{"event": "matrix_complete", "new_models": 31, "official_test_opened": false}

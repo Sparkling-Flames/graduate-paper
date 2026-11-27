@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-11-25T17:49:40.802300+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/workspace/scratch/9ff27115b9fb/research/round3/experiments/venv/bin/python",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "torch": "2.7.1+cpu",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "torch_threads": 2,
+  "torch_interop_threads": 1,
+  "protocol_sha256": "4b9857e414140215b80c68e06c63a624c7b0b8f5645f349aaeaaa548bea2d279",
+  "script_sha256": "9211aa9e960d929e621e15bb9fc5030c3893b8b194ebb1a733a6f7fbc415effa",
+  "command": [
+    "research/round5/cnn_experiments/run_cnn.py",
+    "prepare"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "source_path": "/workspace/scratch/9ff27115b9fb/research/round3/experiments/cnn_pilot/runs/teacher_seed20261120",
+  "copied_full_original_run_to": "source/",
+  "selected_epoch": 17,
+  "selected_budget": 80,
+  "state_sha256": "53b50f6e3a7b021e109eee87e387feefa440a7d3323538c22b1920afd703babc",
+  "source_config_sha256": "35fe2742fa8cc3290e16dab5ff52def5a099d79a61b508a4e01e479631550f9a",
+  "source_cached_logits_sha256": "dc088e5fe5f91389cc4127d22d02d6397d935355385cd9c77c7dc49422cb22e6"
+}

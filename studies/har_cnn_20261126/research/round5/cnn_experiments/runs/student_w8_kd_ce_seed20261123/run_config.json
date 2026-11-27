@@ -1,0 +1,114 @@
+{
+  "protocol_version": "cnn_fixed_teacher_budget_capacity_v1",
+  "input": "official train inertial signals, N x 9 x 128, unchanged audited channel scaler",
+  "train_subjects": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    11,
+    14,
+    15,
+    16,
+    17,
+    19,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27
+  ],
+  "val_subjects": [
+    3,
+    28,
+    29,
+    30
+  ],
+  "student_widths": [
+    4,
+    8,
+    16
+  ],
+  "main_methods": [
+    "ce",
+    "ls",
+    "kd_ce"
+  ],
+  "diagnostic_width": 8,
+  "diagnostic_method": "kd_ls",
+  "paired_seeds": [
+    20261121,
+    20261122,
+    20261123
+  ],
+  "student_epochs": 160,
+  "budgets": [
+    80,
+    160
+  ],
+  "teacher_epochs": 80,
+  "teacher_seed": 20261120,
+  "teacher_channels": [
+    32,
+    64
+  ],
+  "ce_teacher_source": "frozen round3 best80, epoch17, no retraining",
+  "ls_teacher_source": "new 80epoch LS teacher; freeze best80",
+  "architecture": "Conv9-w(k5,p2)-ReLU-MaxPool2-Convw-2w(k5,p2)-ReLU-GAP-Linear6",
+  "batch_size": 128,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "dropout": 0.0,
+  "batch_norm": false,
+  "augmentation": false,
+  "kd_temperature": 2.0,
+  "kd_lambda_teacher_weight": 0.5,
+  "kl_reduction": "batchmean",
+  "kd_temperature_squared": true,
+  "label_smoothing_uniform_epsilon": 0.1,
+  "threads": 2,
+  "interop_threads": 1,
+  "checkpoint_selection": "max val macro-F1, then min hard-label NLL, then earliest epoch",
+  "early_stopping": false,
+  "device": "cpu",
+  "dtype": "float32",
+  "official_test_opened": false,
+  "benchmark": false,
+  "run": "student_w8_kd_ce_seed20261123",
+  "role": "student",
+  "width": 8,
+  "seed": 20261123,
+  "method": "kd_ce",
+  "epochs_this_run": 160,
+  "initial_state_sha256": "f631928cb65d68b737bfe905e0ea75b4c9f0ac7bb9877c0d3e1734679667490c",
+  "minibatch_orders_file_sha256": "99df1a54a0386e6cf8c108d8973321591f1699dc0abd8e8529abcf4f9a726a1f",
+  "used_orders_content_sha256": "507cc6700a4957e22409d997c19fade9bd0f07aceb3563bc855c433e5bf5f6b5",
+  "teacher_identity": {
+    "objective": "ce",
+    "run": "teacher_ce_frozen_round3",
+    "selected_budget": 80,
+    "selected_epoch": 17,
+    "state_sha256": "53b50f6e3a7b021e109eee87e387feefa440a7d3323538c22b1920afd703babc",
+    "cached_logits_file_sha256": "a923cfb7f49c27a02f7edb8bd992be598df921e3961ac3babd9d7fe7db61322d",
+    "index_train_sha256": "299a44b3ce030ee8d994c3b656ae99d6d8b9e9feea473a9680a401d261ade8ea",
+    "row_count": 5902,
+    "requires_grad": false,
+    "training_target_statistics": {
+      "1.0": {
+        "mean_entropy_nats": 0.09723322253823896,
+        "mean_max_probability": 0.9619497987229528
+      },
+      "2.0": {
+        "mean_entropy_nats": 0.2824233961001016,
+        "mean_max_probability": 0.9043100480283672
+      }
+    },
+    "teacher_used_for_all_student_epochs": "same fixed best80 snapshot",
+    "official_test_evaluated": false
+  },
+  "script_sha256": "9211aa9e960d929e621e15bb9fc5030c3893b8b194ebb1a733a6f7fbc415effa",
+  "started_utc": "2026-11-25T17:55:57.201755+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "old_run": "/workspace/scratch/9ff27115b9fb/research/round3/experiments/cnn_pilot/runs/student_w8_ls_seed20261121",
+  "initial_state_equal": true,
+  "first80_minibatch_order_equal": true,
+  "max_abs_metric_differences": {
+    "train_accuracy": 1.1102230246251565e-16,
+    "train_macro_f1": 1.1102230246251565e-16,
+    "train_nll": 8.326672684688674e-17,
+    "val_accuracy": 1.1102230246251565e-16,
+    "val_macro_f1": 1.1102230246251565e-16,
+    "val_nll": 5.551115123125783e-17,
+    "objective_loss": 0.0,
+    "batch_hard_ce": 8.326672684688674e-17
+  },
+  "comparison_excludes_wall_clock_time": true
+}

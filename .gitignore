@@ -1,0 +1,7 @@
+/.venv/
+/archives/
+/data/*
+!/data/README.md
+__pycache__/
+*.py[cod]
+.pytest_cache/

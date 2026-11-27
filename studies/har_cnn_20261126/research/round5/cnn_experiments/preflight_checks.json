@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-11-25T17:49:42.601348+00:00",
+  "script_sha256": "9211aa9e960d929e621e15bb9fc5030c3893b8b194ebb1a733a6f7fbc415effa",
+  "uniform_ls_and_temperature_scaled_kl_validated": true,
+  "max_kd_gradient_error": 2.7755575615628914e-17,
+  "teacher_receives_no_gradient": true,
+  "parameter_counts": {
+    "4": 406,
+    "8": 1126,
+    "16": 3526,
+    "32": 12166
+  },
+  "old_initialization_hashes_match": {
+    "teacher_seed20261120": "86fdd67f7605375b7955a4206e1d4f2e0b8d66ba15830b61d0e2a880dfc426da",
+    "student_w8_ce_seed20261121": "3e7dd3155a73d9afd23cfd488c32bf79978f8bbfb413ab58db3796ea99cf7bfe"
+  },
+  "old_teacher_cache_max_abs_error": 0.0,
+  "old_teacher_validation_macro_f1": 0.9408248639893588,
+  "official_test_opened": false
+}

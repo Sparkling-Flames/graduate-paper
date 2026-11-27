@@ -1,0 +1,81 @@
+{
+  "protocol": "motionsense_cnn_v1",
+  "train_subjects": [
+    1,
+    4,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    20,
+    21,
+    23,
+    24
+  ],
+  "val_subjects": [
+    2,
+    5,
+    14,
+    19
+  ],
+  "test_subjects_sealed": [
+    3,
+    9,
+    18,
+    22
+  ],
+  "channels": [
+    "userAcceleration.x",
+    "userAcceleration.y",
+    "userAcceleration.z",
+    "rotationRate.x",
+    "rotationRate.y",
+    "rotationRate.z",
+    "gravity.x",
+    "gravity.y",
+    "gravity.z"
+  ],
+  "class_names": [
+    "downstairs",
+    "upstairs",
+    "walking",
+    "jogging",
+    "sitting",
+    "standing"
+  ],
+  "window": 128,
+  "stride": 64,
+  "nominal_hz": 50,
+  "teacher_width": 32,
+  "student_width": 8,
+  "teacher_seed": 20261120,
+  "seeds": [
+    20261121,
+    20261122,
+    20261123
+  ],
+  "teacher_epochs": 80,
+  "student_epochs": 160,
+  "lr": 0.001,
+  "batch_size": 128,
+  "epsilon": 0.1,
+  "temperature": 2.0,
+  "teacher_weight": 0.5,
+  "threads": 2,
+  "test_contents_opened": false,
+  "name": "student_w8_ce_seed20261121",
+  "width": 8,
+  "seed": 20261121,
+  "method": "ce",
+  "epochs": 160,
+  "initial_state_sha256": "bb3a6c5d0c29714d49804deacb6e8f4b4bad3fca90eca007a6bb83499b4e0d8c",
+  "orders_sha256": "e33a9fd6cdbe6b08bd144ec7f40791996da767a0afbcb3b0d25f886c2633d71f",
+  "teacher_state_sha256": null,
+  "started_utc": "2026-11-25T17:53:35.929887+00:00"
+}

@@ -1,0 +1,113 @@
+{
+  "torch_version": "2.7.1+cpu",
+  "training_performed": false,
+  "real_dataset_inputs_read": false,
+  "models": [
+    {
+      "model": "harnet5",
+      "checkpoint_bytes": 17037714,
+      "checkpoint_sha256": "74ffaefbafb467b7253d121ef71fe734ee03bc802ba33c33a6aa1aef7f91de5e",
+      "checkpoint_keys": 139,
+      "loaded_feature_state_entries": 131,
+      "missing_feature_entries": [],
+      "classifier_is_random_untrained": true,
+      "parameters_total_six_class_head": 4493638,
+      "parameters_feature_extractor": 4227904,
+      "input_shape": [
+        1,
+        3,
+        150
+      ],
+      "output_shape": [
+        1,
+        6
+      ],
+      "output_finite": true,
+      "stage_shapes": {
+        "layer1": [
+          1,
+          64,
+          75
+        ],
+        "layer2": [
+          1,
+          128,
+          37
+        ],
+        "layer3": [
+          1,
+          256,
+          12
+        ],
+        "layer4": [
+          1,
+          256,
+          4
+        ],
+        "layer5": [
+          1,
+          512,
+          1
+        ]
+      },
+      "77_sample_input": {
+        "runs": false,
+        "exception": "RuntimeError",
+        "message": "Calculated padded input size per channel: (4). Kernel size: (5). Kernel size can't be greater than actual input size"
+      }
+    },
+    {
+      "model": "harnet10",
+      "checkpoint_bytes": 42014098,
+      "checkpoint_sha256": "c64f9135d99e2dcdfc9ae7cc0672f2bcc438df9ceb8215665882f92cddd162a6",
+      "checkpoint_keys": 139,
+      "loaded_feature_state_entries": 131,
+      "missing_feature_entries": [],
+      "classifier_is_random_untrained": true,
+      "parameters_total_six_class_head": 10985286,
+      "parameters_feature_extractor": 10457408,
+      "input_shape": [
+        1,
+        3,
+        300
+      ],
+      "output_shape": [
+        1,
+        6
+      ],
+      "output_finite": true,
+      "stage_shapes": {
+        "layer1": [
+          1,
+          64,
+          150
+        ],
+        "layer2": [
+          1,
+          128,
+          75
+        ],
+        "layer3": [
+          1,
+          256,
+          15
+        ],
+        "layer4": [
+          1,
+          512,
+          3
+        ],
+        "layer5": [
+          1,
+          1024,
+          1
+        ]
+      },
+      "77_sample_input": {
+        "runs": false,
+        "exception": "RuntimeError",
+        "message": "Calculated padded input size per channel: (7). Kernel size: (9). Kernel size can't be greater than actual input size"
+      }
+    }
+  ]
+}

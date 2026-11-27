@@ -1,0 +1,20 @@
+{"event": "cost_probe", "run": "teacher_ce_seed20261120", "estimated_seconds": 157.05491697599973}
+{"event": "completed", "run": "teacher_ce_seed20261120", "best80_f1": 0.8643286121600934, "best160_f1": null, "seconds": 230.4049433360001}
+{"event": "cost_probe", "run": "student_w8_ce_seed20261121", "estimated_seconds": 150.53976467200118}
+{"event": "completed", "run": "student_w8_ce_seed20261121", "best80_f1": 0.8582392187015556, "best160_f1": 0.8582392187015556, "seconds": 87.18178253199994}
+{"event": "cost_probe", "run": "student_w8_ls_seed20261121", "estimated_seconds": 137.99930636800127}
+{"event": "completed", "run": "student_w8_ls_seed20261121", "best80_f1": 0.8650908424891517, "best160_f1": 0.8774429883706953, "seconds": 111.76423999500003}
+{"event": "cost_probe", "run": "student_w8_kd_seed20261121", "estimated_seconds": 88.19429571200453}
+{"event": "completed", "run": "student_w8_kd_seed20261121", "best80_f1": 0.8453383261824277, "best160_f1": 0.8791673133862835, "seconds": 94.98632985200015}
+{"event": "cost_probe", "run": "student_w8_ce_seed20261122", "estimated_seconds": 76.57615091199841}
+{"event": "completed", "run": "student_w8_ce_seed20261122", "best80_f1": 0.8453556034949407, "best160_f1": 0.8453556034949407, "seconds": 84.35495842699993}
+{"event": "cost_probe", "run": "student_w8_ls_seed20261122", "estimated_seconds": 74.3222429439993}
+{"event": "completed", "run": "student_w8_ls_seed20261122", "best80_f1": 0.8323739738514738, "best160_f1": 0.8414050091885527, "seconds": 100.37877538399994}
+{"event": "cost_probe", "run": "student_w8_kd_seed20261122", "estimated_seconds": 114.77426812799968}
+{"event": "completed", "run": "student_w8_kd_seed20261122", "best80_f1": 0.8428231941237719, "best160_f1": 0.8428231941237719, "seconds": 112.30962852900007}
+{"event": "cost_probe", "run": "student_w8_ce_seed20261123", "estimated_seconds": 99.16489020799781}
+{"event": "completed", "run": "student_w8_ce_seed20261123", "best80_f1": 0.8233670542700445, "best160_f1": 0.8233670542700445, "seconds": 98.57194038599982}
+{"event": "cost_probe", "run": "student_w8_ls_seed20261123", "estimated_seconds": 125.00544796800386}
+{"event": "completed", "run": "student_w8_ls_seed20261123", "best80_f1": 0.8442749679752257, "best160_f1": 0.8442749679752257, "seconds": 98.23474400000009}
+{"event": "cost_probe", "run": "student_w8_kd_seed20261123", "estimated_seconds": 84.17829551999603}
+{"event": "completed", "run": "student_w8_kd_seed20261123", "best80_f1": 0.8461531682546717, "best160_f1": 0.8461531682546717, "seconds": 78.71269727599997}

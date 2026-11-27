@@ -1,0 +1,14 @@
+{
+  "runs_checked": 32,
+  "new_students_checked": 30,
+  "checkpoints_and_predictions_checked": 124,
+  "independent_sklearn_metrics_and_float64_nll_match": true,
+  "per_subject_and_confusion_recomputation_match": true,
+  "checkpoint_selection_matches_curves": true,
+  "all_student_80_160_paths_share_fixed_teacher": true,
+  "paired_initialization_and_order_match": true,
+  "ce_teacher_original_hash_and_ls_teacher_initialization_order_match": true,
+  "old_first80_three_method_reproduction_passed": true,
+  "official_test_evaluated": false,
+  "extra_training_or_model_selection_performed_by_audit": false
+}
