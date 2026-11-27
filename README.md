@@ -7,6 +7,7 @@
 | 用途 | 入口 |
 | --- | --- |
 | 查看排期 | [毕业论文十二周进度计划](docs/毕业论文十二周进度计划.pdf) |
+| 比较 UCI HAR 的补充训练数据 | [MotionSense 与 PAMAP2 英文会议简报](docs/MotionSense_and_PAMAP2_comparison.pdf) · [本地数据与下载来源](data/README.md) |
 | 了解已有结果 | [11 月 26 日研究进展](studies/har_cnn_20261126/output/har_cnn_20261126/HAR_1D_CNN_研究进展_20261126.pdf) · [汇总数据](studies/har_cnn_20261126/output/har_cnn_20261126/analysis_summary.json) |
 | 阅读 UCI HAR 训练代码 | [run_cnn.py](studies/har_cnn_20261126/research/round5/cnn_experiments/run_cnn.py) · [实验协议](studies/har_cnn_20261126/research/round5/cnn_experiments/protocol.md) |
 | 阅读 MotionSense 训练代码 | [run_motionsense.py](studies/har_cnn_20261126/research/round5/motionsense_experiments/run_motionsense.py) |

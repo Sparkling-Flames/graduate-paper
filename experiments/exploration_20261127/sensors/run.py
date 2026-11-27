@@ -33,23 +33,27 @@ def features(windows):
     ), axis=2)
 
 
-def select_windows(windows, allow_short_gaps):
+def eligible(windows, allow_short_gaps):
     complete = np.isfinite(windows).all(axis=(2, 3))
     keep = complete.all(axis=1)
     if allow_short_gaps:
-        repair = ~keep & complete[:, 0] & complete[:, -1] & ((~complete).sum(axis=1) <= 10)
-        for index in np.flatnonzero(repair):
-            for channel in windows[index].reshape(WINDOW, 9).T:
+        keep |= complete[:, 0] & complete[:, -1] & ((~complete).sum(axis=1) <= 10)
+    return keep
+
+
+def select_windows(windows, allow_short_gaps):
+    chosen = windows[eligible(windows, allow_short_gaps)]
+    if allow_short_gaps:
+        for index in np.flatnonzero(~np.isfinite(chosen).all(axis=(1, 2, 3))):
+            for channel in chosen[index].reshape(len(chosen[index]), -1).T:
                 finite = np.isfinite(channel)
                 if not finite.all():
                     channel[~finite] = np.interp(np.flatnonzero(~finite), np.flatnonzero(finite), channel[finite])
-        keep |= repair
-    chosen = windows[keep]
     assert np.isfinite(chosen).all()
     return chosen
 
 
-def subject_windows(archive, subject, allow_short_gaps):
+def raw_windows(archive, subject):
     cols = [0, 1, 4, 5, 6, 21, 22, 23, 38, 39, 40]
     with archive.open(f"PAMAP2_Dataset/Protocol/subject{subject}.dat") as stream:
         records = pd.read_csv(stream, header=None, sep=r"\s+", usecols=cols)
@@ -59,15 +63,19 @@ def subject_windows(archive, subject, allow_short_gaps):
     dt = np.diff(timestamps)
     breaks = np.flatnonzero((dt <= 0) | (dt > .015) | (np.diff(labels) != 0)) + 1
     bounds = np.r_[0, breaks, len(labels)]
-    blocks, out_labels, audit = [], [], []
     for a, b in zip(bounds[:-1], bounds[1:]):
         n = (b-a) // WINDOW
         label = int(labels[a])
         if label not in ACTIVITIES or n == 0:
             continue
-        windows = acceleration[a:a+n*WINDOW].reshape(n, WINDOW, 3, 3)
+        yield label, acceleration[a:a+n*WINDOW].reshape(n, WINDOW, 3, 3)
+
+
+def subject_windows(archive, subject, allow_short_gaps):
+    blocks, out_labels, audit = [], [], []
+    for label, windows in raw_windows(archive, subject):
         selected = select_windows(windows, allow_short_gaps)
-        audit.append((subject, ACTIVITIES[label], n, len(selected)))
+        audit.append((subject, ACTIVITIES[label], len(windows), len(selected)))
         if len(selected):
             blocks.append(features(selected))
             out_labels.extend([label] * len(selected))

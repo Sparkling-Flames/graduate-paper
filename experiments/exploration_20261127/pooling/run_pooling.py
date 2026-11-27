@@ -38,7 +38,7 @@ def features(body, gyro, gravity):
     return x
 
 
-def read_uci():
+def read_uci(extract=features):
     path = DATA / "UCI HAR Dataset" / "train"
     subject = np.loadtxt(path / "subject_train.txt", dtype=int)
     y = np.loadtxt(path / "y_train.txt", dtype=int)
@@ -51,11 +51,11 @@ def read_uci():
         return np.stack(axes, axis=2)
 
     body = signal("body_acc")
-    x = features(body, signal("body_gyro"), signal("total_acc") - body)
+    x = extract(body, signal("body_gyro"), signal("total_acc") - body)
     return x, y, subject
 
 
-def read_motion():
+def read_motion(extract=features):
     columns = [f"{name}.{axis}" for name in ("userAcceleration", "rotationRate", "gravity")
                for axis in "xyz"]
     blocks, targets, subjects = [], [], []
@@ -72,7 +72,7 @@ def read_motion():
             readings = frame[columns].to_numpy(dtype=np.float32)
             windows = np.lib.stride_tricks.sliding_window_view(readings, 128, axis=0)[::64]
             windows = windows.transpose(0, 2, 1)
-            blocks.append(features(windows[:, :, :3], windows[:, :, 3:6], windows[:, :, 6:]))
+            blocks.append(extract(windows[:, :, :3], windows[:, :, 3:6], windows[:, :, 6:]))
             targets.extend([MOTION_CODES.index(activity)] * len(windows))
             subjects.extend([person] * len(windows))
     return np.concatenate(blocks), np.array(targets), np.array(subjects)
